@@ -1,1 +1,84 @@
+# RandomKits Wiki
+
+## Introduction
+
+Welcome to the RandomKits Wiki! This plugin enhances your Minecraft server by providing customizable arenas and random kits for players to use upon respawn. Perfect for creating dynamic and exciting PvP experiences.
+
+## Features
+
+- **Create and Remove Arenas:** Set up and manage arenas where players can compete.
+- **Create and Save Kits:** Design and store kits with different items and configurations.
+- **Random Kit Assignment:** Automatically assign a random kit to players when they respawn.
+- **Customizable Death Title:** Show a custom title when players die.
+
+## Installation
+
+1. **Download the Plugin:** Obtain the latest version of the RandomKits plugin.
+2. **Place the Plugin:** Move the `RandomKits.jar` file into the `plugins` folder of your Minecraft server.
+3. **Restart the Server:** Restart your server to load the plugin.
+
+## Configuration
+
+### Configuring Arenas
+
+#### Commands
+
+- **`/arena create <arena>`**: Initiates the process of creating a new arena. When you execute this command, you will receive a claim wand. Follow the steps below to set up the arena.
+- **`/arena remove <arena>`**: Removes an existing arena.
+
+#### Creating an Arena
+
+1. **Run the Command:**
+   - Execute `/arena create <arena>` to begin the arena creation process. This command will give you a claim wand.
+
+2. **Claim the Arena:**
+   - Use the claim wand to define the boundaries of your arena:
+     - **Right-click** on a block to set Position 1.
+     - **Left-click** on another block to set Position 2.
+     - **Shift + Click** in the air to claim the arena.
+
+3. **Wait for Processing:**
+   - After claiming the area, the plugin will copy and load the blocks of the defined region. Wait until this process is complete before using the arena.
+
+### Managing Kits
+
+1. **Create a Kit:**
+   - Use the command `/randomkits createkit <kitName>` to start a new kit.
+   - Add items to the kit using `/randomkits additem <kitName> <item> <amount>`.
+
+2. **Save a Kit:**
+   - Ensure all items are added, then save the kit with `/randomkits savekit <kitName>`.
+
+### Assigning Kits
+
+1. **Random Kit Assignment:**
+   - Kits are automatically assigned to players when they respawn in any arena.
+
+### Customizable Death Title
+
+1. **Set a Death Title:**
+   - Configure the death title in the `config.yml` file under the `deathTitle` section.
+
+## Commands
+
+- **`/randomkits createarena <arenaName>`** - Create a new arena.
+- **`/randomkits removearena <arenaName>`** - Remove an existing arena.
+- **`/randomkits createkit <kitName>`** - Create a new kit.
+- **`/randomkits additem <kitName> <item> <amount>`** - Add items to a kit.
+- **`/randomkits savekit <kitName>`** - Save the kit.
+
+## Permissions
+
+- **randomkits.create** - Allows the user to create arenas and kits.
+- **randomkits.remove** - Allows the user to remove arenas and kits.
+- **randomkits.assign** - Allows the user to assign kits to players.
+
+## Troubleshooting
+
+- **Plugin Not Loading:** Ensure that you have the correct version of the plugin for your Minecraft server and restart the server.
+- **Commands Not Working:** Check that you have the necessary permissions and syntax is correct.
+
+## Contact
+
+For support, suggestions, or issues, please reach out to [Your Contact Information].
 
